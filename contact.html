@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pixel Shield</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/logoAvecTitre.png">
+    </a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="forfaits.html">Forfaits</a></li>
+      <li><a href="equipe.html">Équipe</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="button-commencer">
+    <a href="contact.html">Commencer</a>
+  </div>
+</header>
+
+<!-- TITRE PAGE -->
+<section class="contact-hero">
+  <div class="container">
+    <h1>&#9993; Contactez Pixel Shield</h1>
+    <p>
+      Une question, une demande ou un besoin de sécurité ?  
+      Notre équipe vous répond rapidement.
+    </p>
+  </div>
+</section>
+
+<!-- FORMULAIRE -->
+<section class="contact-form">
+
+  <div class="container">
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>&#128100; Informations personnelles</legend>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+        <label for="tel">Numéro</label>
+        <input type="tel" id="tel" name="tel" placeholder="Votre numéro">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>&#128736; Type de demande</legend>
+
+        <label>
+          <input type="radio" name="type" value="particulier" checked>
+          Particulier
+        </label>
+
+        <label>
+          <input type="radio" name="type" value="entreprise">
+          Entreprise
+        </label>
+
+        <label for="entreprise">Nom de l’entreprise</label>
+        <input type="text" id="entreprise" name="entreprise" placeholder="Si applicable">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>&#9997; Votre message</legend>
+
+        <textarea name="message" rows="6" placeholder="Décrivez votre demande..." required></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>&#128274; Validation</legend>
+
+        <label>
+          <input type="checkbox" required>
+          J’accepte les conditions d’utilisation
+        </label>
+
+        <p>Captcha : 2 + 3 = ?</p>
+        <input type="number" name="captcha" required>
+
+      </fieldset>
+
+      <input type="submit" value="Envoyer le message">
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="container">
+
+    <p>© 2026 Pixel Shield — Tous droits réservés</p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -9,22 +9,55 @@
 
 <body>
 
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/logoAvecTitre.png" alt="Pixel Shield">
+    </a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="forfaits.html">Forfaits</a></li>
+      <li><a href="equipe.html">Équipe</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="button-commencer">
+    <a href="contact.html">Commencer</a>
+  </div>
+</header>
+
+<!-- PRICING -->
+
 <section class="pricing">
 
   <div class="container">
 
-    <h1>Nos forfaits</h1>
+    <!-- ILLUSTRATION (OK MAIS MIEUX PLACÉE) -->
+    <div class="pricing-illustration">
+      <img src="assets/illustration-4-dashboard.svg" alt="Dashboard sécurité">
+    </div>
 
-    <p class="pricing-intro">
-      Choisissez le niveau de protection adapté à votre usage.
-    </p>
+    <!-- TITRE -->
+    <div class="pricing-header">
+      <h1>Nos forfaits</h1>
+      <p class="pricing-intro">
+        Choisissez le niveau de protection adapté à votre usage.
+      </p>
+    </div>
 
+    <!-- GRID -->
     <div class="pricing-grid">
 
-      <!-- CORE SHIELD -->
+      <!-- CORE -->
       <div class="pricing-card">
 
-        <h2>&#128737; Core Shield</h2>
+        <h2>🛡 Core Shield</h2>
         <p class="price">0€ / mois</p>
 
         <p class="target">
@@ -33,26 +66,26 @@
 
         <ul class="features">
 
-          <li>&#10003; Protection basique</li>
-          <li>&#10003; Scan antivirus</li>
-          <li>&#10003; Anti-sites dangereux</li>
-          <li>&#10003; 1 appareil</li>
-          <li>&#10003; Alertes simples</li>
+          <li class="ok">&#10003; Protection basique</li>
+          <li class="ok">&#10003; Scan antivirus</li>
+          <li class="ok">&#10003; Anti-sites dangereux</li>
+          <li class="ok">&#10003; 1 appareil</li>
+          <li class="ok">&#10003; Alertes simples</li>
 
-          <li>&#10007; Protection en temps réel</li>
-          <li>&#10007; Multi-appareils</li>
-          <li>&#10007; VPN sécurisé</li>
+          <li class="no">&#10007; Protection en temps réel</li>
+          <li class="no">&#10007; Multi-appareils</li>
+          <li class="no">&#10007; VPN sécurisé</li>
 
         </ul>
 
-        <a href="contact.html">Commencer</a>
+        <a class="btn-pricing" href="contact.html">Commencer</a>
 
       </div>
 
-      <!-- PULSE SHIELD -->
+      <!-- PULSE (IMPORTANT = carte centrale) -->
       <div class="pricing-card popular">
 
-        <h2>&#9889; Pulse Shield</h2>
+        <h2>⚡ Pulse Shield</h2>
         <p class="price">12€ / mois</p>
 
         <p class="target">
@@ -61,28 +94,29 @@
 
         <ul class="features">
 
-          <li>&#10003; Protection en temps réel</li>
-          <li>&#10003; Anti-phishing avancé</li>
-          <li>&#10003; Jusqu’à 5 appareils</li>
-          <li>&#10003; VPN sécurisé</li>
-          <li>&#10003; Détection comportementale</li>
-          <li>&#10003; Alertes instantanées</li>
-          <li>&#10003; Historique des menaces</li>
+          <li class="ok">&#10003; Protection en temps réel</li>
+          <li class="ok">&#10003; Anti-phishing avancé</li>
+          <li class="ok">&#10003; Jusqu’à 5 appareils</li>
+          <li class="ok">&#10003; VPN sécurisé</li>
+          <li class="ok">&#10003; Détection comportementale</li>
+          <li class="ok">&#10003; Alertes instantanées</li>
+          <li class="ok">&#10003; Historique des menaces</li>
 
-          <li>&#10007; Protection réseau complète</li>
+          <li class="no">&#10007; Protection réseau complète</li>
 
         </ul>
 
-        <p class="offer">-10% avec abonnement annuel</p>
+        <!-- IMPORTANT (OFFRE BIEN PLACÉE) -->
+        <div class="offer">-10% avec abonnement annuel</div>
 
-        <a href="contact.html">Choisir</a>
+        <a class="btn-pricing" href="contact.html">Choisir</a>
 
       </div>
 
-      <!-- BUSINESS SHIELD -->
+      <!-- BUSINESS -->
       <div class="pricing-card">
 
-        <h2>&#127970; Business Shield</h2>
+        <h2>🏢 Business Shield</h2>
         <p class="price">À partir de 75€ / mois</p>
 
         <p class="target">
@@ -95,21 +129,21 @@
 
         <ul class="features">
 
-          <li>&#10003; Tout le plan Pulse</li>
-          <li>&#10003; Protection réseau (LAN / Wi-Fi)</li>
-          <li>&#10003; Surveillance des connexions</li>
-          <li>&#10003; Détection d’intrusion</li>
-          <li>&#10003; Gestion multi-utilisateurs</li>
-          <li>&#10003; Appareils illimités</li>
-          <li>&#10003; Protection ransomware avancée</li>
-          <li>&#10003; Dashboard administrateur</li>
-          <li>&#10003; Rapports de sécurité</li>
+          <li class="ok">&#10003; Tout le plan Pulse</li>
+          <li class="ok">&#10003; Protection réseau (LAN / Wi-Fi)</li>
+          <li class="ok">&#10003; Surveillance des connexions</li>
+          <li class="ok">&#10003; Détection d’intrusion</li>
+          <li class="ok">&#10003; Gestion multi-utilisateurs</li>
+          <li class="ok">&#10003; Appareils illimités</li>
+          <li class="ok">&#10003; Protection ransomware avancée</li>
+          <li class="ok">&#10003; Dashboard administrateur</li>
+          <li class="ok">&#10003; Rapports de sécurité</li>
 
         </ul>
 
-        <p class="offer">-10% avec abonnement annuel</p>
+        <div class="offer">-10% avec abonnement annuel</div>
 
-        <a href="contact.html">Nous contacter</a>
+        <a class="btn-pricing" href="contact.html">Nous contacter</a>
 
       </div>
 
