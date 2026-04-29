@@ -1654,7 +1654,7 @@ footer::before {
     color: var(--color-accent);
   }
 
-  #menu-toggle:checked ~ nav ul {
+  #menu-toggle:checked + .menu-icon + nav ul {
     display: flex;
   }
 
@@ -1695,6 +1695,18 @@ footer::before {
 
   .footer-clients {
     gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .footer-clients::-webkit-scrollbar {
+    display: none;
+  }
+
+  .footer-clients {
+    scrollbar-width: none;
   }
 
   .client-slot {
