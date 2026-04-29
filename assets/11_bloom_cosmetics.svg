@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <defs>
+    <radialGradient id="bloomBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#FEF0F4"/>
+      <stop offset="100%" style="stop-color:#F8E1E7"/>
+    </radialGradient>
+    <radialGradient id="petalGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#FFB3CC"/>
+      <stop offset="100%" style="stop-color:#FF6F91"/>
+    </radialGradient>
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E9B8FC"/>
+      <stop offset="100%" style="stop-color:#C084FC"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#bloomBg)" rx="4"/>
+
+  <!-- Subtle dots decoration -->
+  <g opacity="0.15" fill="#FF6F91">
+    <circle cx="40" cy="30" r="3"/>
+    <circle cx="65" cy="55" r="2"/>
+    <circle cx="345" cy="28" r="2.5"/>
+    <circle cx="360" cy="55" r="2"/>
+    <circle cx="50" cy="165" r="2"/>
+    <circle cx="355" cy="162" r="3"/>
+  </g>
+
+  <!-- Flower petals (5 petals) -->
+  <!-- Petal positions around center 185,72 -->
+  <!-- Top petal -->
+  <ellipse cx="185" cy="48" rx="10" ry="18" fill="url(#petalGrad)" opacity="0.9"/>
+  <!-- Bottom-right petal -->
+  <ellipse cx="208" cy="83" rx="10" ry="18" fill="url(#petalGrad)" opacity="0.85" transform="rotate(72 208 83)"/>
+  <!-- Bottom-left petal -->
+  <ellipse cx="163" cy="83" rx="10" ry="18" fill="url(#petalGrad)" opacity="0.85" transform="rotate(-72 163 83)"/>
+  <!-- Top-right petal -->
+  <ellipse cx="209" cy="55" rx="10" ry="18" fill="url(#petalGrad)" opacity="0.8" transform="rotate(36 209 55)"/>
+  <!-- Top-left petal -->
+  <ellipse cx="161" cy="55" rx="10" ry="18" fill="url(#petalGrad)" opacity="0.8" transform="rotate(-36 161 55)"/>
+
+  <!-- Center circle -->
+  <circle cx="185" cy="70" r="16" fill="url(#centerGrad)"/>
+  <!-- Center highlight -->
+  <circle cx="181" cy="65" r="5" fill="white" opacity="0.3"/>
+
+  <!-- Stem -->
+  <line x1="185" y1="86" x2="185" y2="100" stroke="#FF6F91" stroke-width="1.5" opacity="0.5"/>
+  <!-- Small leaf on stem -->
+  <path d="M185 93 Q194 90 196 96" fill="none" stroke="#C084FC" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Brand name -->
+  <text x="200" y="148" font-family="'Playfair Display', 'Crimson Text', 'Georgia', serif"
+        font-size="22" font-weight="700" fill="#CC3366" text-anchor="middle" letter-spacing="4">Bloom</text>
+  <!-- Tagline -->
+  <text x="200" y="165" font-family="'Playfair Display', 'Crimson Text', Georgia, serif"
+        font-size="9" font-weight="400" fill="#C084FC" text-anchor="middle" letter-spacing="5">COSMETICS</text>
+</svg>

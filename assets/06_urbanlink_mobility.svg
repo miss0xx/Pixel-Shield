@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <defs>
+    <linearGradient id="ulBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C1C1C"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A0A0A0;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#00C2FF"/>
+      <stop offset="100%" style="stop-color:#A0A0A0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#ulBg)" rx="4"/>
+
+  <!-- Connected road path symbol -->
+  <!-- 3 horizontal flowing lines -->
+  <path d="M130 58 Q158 52 185 58 Q212 64 240 58" fill="none" stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M118 75 Q152 67 185 75 Q218 83 252 75" fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 92 Q158 98 185 92 Q212 86 240 92" fill="none" stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Connector nodes -->
+  <circle cx="152" cy="75" r="4.5" fill="#00C2FF"/>
+  <circle cx="152" cy="75" r="8" fill="#00C2FF" opacity="0.15"/>
+  <circle cx="185" cy="75" r="5.5" fill="white"/>
+  <circle cx="185" cy="75" r="9" fill="#00C2FF" opacity="0.1"/>
+  <circle cx="218" cy="75" r="4.5" fill="#00C2FF"/>
+  <circle cx="218" cy="75" r="8" fill="#00C2FF" opacity="0.15"/>
+
+  <!-- Right arrow tip -->
+  <polyline points="245,67 258,75 245,83" fill="none" stroke="#00C2FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Brand name -->
+  <text x="200" y="147" font-family="'Montserrat', 'Barlow', 'Verdana', sans-serif"
+        font-size="19" font-weight="800" fill="#F5F5F5" text-anchor="middle" letter-spacing="4">URBANLINK</text>
+  <!-- Tagline -->
+  <text x="200" y="165" font-family="'Montserrat', 'Barlow', 'Verdana', sans-serif"
+        font-size="9" font-weight="300" fill="#00C2FF" text-anchor="middle" letter-spacing="6">MOBILITY</text>
+</svg>

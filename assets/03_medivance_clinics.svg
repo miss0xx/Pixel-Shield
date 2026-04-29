@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <defs>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A8CC"/>
+      <stop offset="100%" style="stop-color:#0085A3"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4EE;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00A8CC;stop-opacity:0.5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="#E6F1FF" rx="4"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="25" x2="400" y2="25" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="50" x2="400" y2="50" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="75" x2="400" y2="75" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="400" y2="100" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="125" x2="400" y2="125" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#2B2D42" stroke-width="0.5"/>
+    <line x1="0" y1="175" x2="400" y2="175" stroke="#2B2D42" stroke-width="0.5"/>
+  </g>
+
+  <!-- Abstract cross shape (rounded) -->
+  <rect x="171" y="30" width="28" height="80" rx="6" fill="url(#crossGrad)" opacity="0.9"/>
+  <rect x="145" y="55" width="80" height="28" rx="6" fill="url(#crossGrad)" opacity="0.9"/>
+
+  <!-- Digital heart shape overlay -->
+  <path d="M185 95 C185 95 162 78 162 65 C162 57 168 51 177 53 C181 54 185 58 185 58 C185 58 189 54 193 53 C202 51 208 57 208 65 C208 78 185 95 185 95Z" fill="url(#heartGrad)" opacity="0.45"/>
+
+  <!-- Pulse line -->
+  <polyline points="155,75 163,75 167,63 173,87 179,67 185,75 195,75" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- Brand name -->
+  <text x="200" y="148" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20" font-weight="700" fill="#2B2D42" text-anchor="middle" letter-spacing="3">MEDIVANCE</text>
+  <!-- Subtitle -->
+  <text x="200" y="166" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9" font-weight="400" fill="#00A8CC" text-anchor="middle" letter-spacing="5">CLINICS</text>
+</svg>

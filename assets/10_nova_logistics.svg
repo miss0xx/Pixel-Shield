@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+  <defs>
+    <linearGradient id="nlBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0F1A"/>
+      <stop offset="100%" style="stop-color:#101525"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="100%" style="stop-color:#FF8E8E"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4D96FF"/>
+      <stop offset="100%" style="stop-color:#7AB3FF"/>
+    </linearGradient>
+    <radialGradient id="globeNL" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" style="stop-color:#1a2540"/>
+      <stop offset="100%" style="stop-color:#0B0F1A"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#nlBg)" rx="4"/>
+
+  <!-- Globe outline -->
+  <circle cx="185" cy="72" r="38" fill="url(#globeNL)" stroke="#1F2A44" stroke-width="1.5"/>
+  <!-- Globe meridians -->
+  <ellipse cx="185" cy="72" rx="20" ry="38" fill="none" stroke="#1F2A44" stroke-width="1" opacity="0.6"/>
+  <line x1="147" y1="72" x2="223" y2="72" stroke="#1F2A44" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="185" cy="72" rx="38" ry="15" fill="none" stroke="#1F2A44" stroke-width="1" opacity="0.4"/>
+
+  <!-- Arrow 1: diagonal up-right (red) -->
+  <path d="M155 88 L175 55" stroke="url(#arrowGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="175,55 165,55 175,42 185,55 175,55" fill="#FF6B6B"/>
+
+  <!-- Arrow 2: diagonal up-right offset (blue) -->
+  <path d="M170 95 L198 60" stroke="url(#arrowGrad2)" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="198,60 188,62 200,48 208,62 198,60" fill="#4D96FF"/>
+
+  <!-- Arrow 3: horizontal right (red, thinner) -->
+  <path d="M175 80 L215 80" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="215,80 207,75 220,80 207,85 215,80" fill="#FF6B6B" opacity="0.6"/>
+
+  <!-- Brand name -->
+  <text x="200" y="148" font-family="'Black Han Sans', 'Anton', 'Impact', sans-serif"
+        font-size="22" font-weight="900" fill="#F0F4FF" text-anchor="middle" letter-spacing="5">NOVA</text>
+  <text x="200" y="166" font-family="'Black Han Sans', 'Anton', 'Impact', sans-serif"
+        font-size="9.5" font-weight="400" fill="#4D96FF" text-anchor="middle" letter-spacing="6">LOGISTICS</text>
+</svg>
